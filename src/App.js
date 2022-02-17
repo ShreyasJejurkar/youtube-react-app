@@ -5,7 +5,7 @@ import { SearchBar, VideoList, VideoDetail } from "./components";
 
 import Youtube from "./api/Youtube";
 
-export default () => {
+const App = () => {
     const [videos, setVideos] = useState([]);
     const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -41,3 +41,4 @@ export default () => {
         setSelectedVideo(videos[0]);
     }
 }
+export default App;

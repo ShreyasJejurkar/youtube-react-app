@@ -2,7 +2,8 @@ import React from "react";
 
 import { Paper, Typography } from "@material-ui/core";
 
-export default ({ video }) => {
+
+const VideoDetail =  ({ video }) => {
   if (!video) return <div>Loading...</div>;
 
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
@@ -30,3 +31,5 @@ export default ({ video }) => {
     </React.Fragment>
   );
 }
+
+export default VideoDetail;
